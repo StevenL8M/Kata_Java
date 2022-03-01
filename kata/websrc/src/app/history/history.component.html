@@ -1,0 +1,12 @@
+<h1>History</h1>
+<small>Client Number : </small><input name="clientId" type="text" placeholder="00000" [(ngModel)]="clientId"/>
+<button id="validate" (click)="history()">Get History</button>
+<ul>
+    <li *ngFor="let operation of operations">
+        <span>Operation type: {{  operation.operationType }}</span> <br/>
+        <span>Operation date: {{  operation.operationDate }}</span><br/>
+        <span>Amount: {{  operation.amount }}</span><br/>
+        <span>New balance: {{  operation.balance }}</span><br/>
+        <br/>
+    </li>
+</ul>
