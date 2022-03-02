@@ -17,7 +17,6 @@ export class DepositComponent implements OnInit {
   }
 
   public validateDeposit() {
-    console.log("ok");
     this.accountService.depose(this.clientId, this.amount);
   }
 
